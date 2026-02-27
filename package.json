@@ -7,9 +7,18 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "node server/server.js",
+    "ingest": "node server/ingest/index.js --run"
   },
   "dependencies": {
+    "better-sqlite3": "^12.6.2",
+    "cheerio": "^1.2.0",
+    "dotenv": "^17.3.1",
+    "echarts": "^6.0.0",
+    "echarts-for-react": "^3.0.6",
+    "express": "^5.2.1",
+    "fast-xml-parser": "^5.4.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },

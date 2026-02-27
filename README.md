@@ -16,6 +16,69 @@ npm run dev
 
 浏览器打开：`http://localhost:5173/`
 
+## 真实数据接入（RSS + 数据库）
+本项目支持通过 RSS 源抓取真实岗位数据并落库（SQLite），用于后续趋势计算。
+
+1) 配置 RSS 源  
+在 `server/sources.js` 中填写允许抓取的 RSS URL（请确认站点协议与 robots 策略）。
+
+2) 运行抓取  
+```bash
+npm run ingest
+```
+
+3) 启动服务（含 API）  
+```bash
+npm run build
+npm run start
+```
+API 示例：  
+- `GET /api/careers`  
+- `GET /api/career/程序员`
+
+## JSON/开放 API 接入
+在 `server/sources.json` 中配置 JSON 数据源，可用于：
+- 岗位数据（type: jobs）
+- 公司日级数据（type: company）
+- 行业日级数据（type: industry）
+
+字段映射通过 `fields` 配置完成，支持嵌套路径。
+
+### Adzuna / Jooble（免费 API）
+将 `.env.example` 复制为 `.env` 并填写：
+- `ADZUNA_APP_ID` / `ADZUNA_APP_KEY`
+- `JOOBLE_API_KEY`
+
+随后在 `server/sources.json` 将对应源的 `enabled` 设置为 `true`。
+
+## 国内爬虫接入（BOSS直聘 / 拉勾 / 智联）
+已提供 HTML 解析模板（默认关闭），请按站点结构与合规要求配置：
+1) 在 `server/sources.json` 的 `html` 节点中填写选择器与 Cookie  
+2) 将 `enabled` 改为 `true`
+3) 运行抓取 `npm run ingest`
+
+说明：这些站点反爬较强，通常需要登录 Cookie、请求间隔与重试控制。
+
+## 反爬策略 / 频率控制 / 重试
+抓取实现支持：
+- 指定 `delayMs` 控制请求间隔
+- `retry` 失败重试（指数退避 + 随机抖动）
+- 建议配合站点协议与 robots 规则使用
+
+## Windows 定时任务（每日自动抓取）
+创建定时任务（每天 02:30 执行）：
+```powershell
+scripts\create-task.ps1
+```
+删除定时任务：
+```powershell
+scripts\remove-task.ps1
+```
+手动运行抓取：
+```powershell
+scripts\run-ingest.ps1
+```
+
 ## 技术栈
 - React
 - Vite
