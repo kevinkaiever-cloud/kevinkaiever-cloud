@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 .env
+server/career-kline.db
+server/career-kline.db-shm
+server/career-kline.db-wal
 
 # Editor directories and files
 .vscode/*
