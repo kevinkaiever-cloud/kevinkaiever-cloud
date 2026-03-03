@@ -6,7 +6,7 @@
 
 像炒股一样分析职业走势，为求职、转行、高考选专业提供数据支撑。
 
-[功能特性](#功能特性) · [快速开始](#快速开始) · [项目结构](#项目结构)
+[功能特性](#功能特性) · [快速开始](#快速开始) · [服务器部署](deploy/DEPLOY.md) · [项目结构](#项目结构)
 
 </div>
 
@@ -112,6 +112,16 @@ XUNHU_APPSECRET=
 | `npm run build:cache` | 生成趋势缓存 |
 | `npm run ingest` | 运行数据采集 |
 | `npm run ingest:zhaopin` | 智联招聘数据采集 |
+
+---
+
+## 服务器部署
+
+详见 [deploy/DEPLOY.md](deploy/DEPLOY.md)，支持：
+
+- **PM2**：`bash deploy/deploy.sh` 一键部署
+- **Nginx**：反向代理 + HTTPS
+- **Docker**：`docker build -t career-kline .`
 
 ---
 
