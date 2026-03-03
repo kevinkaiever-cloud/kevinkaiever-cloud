@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://career-kline.com/sitemap.xml

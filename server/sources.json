@@ -1,0 +1,769 @@
+{
+  "rss": [
+    {
+      "name": "RemoteOK",
+      "url": "https://remoteok.com/remote-dev-jobs.rss",
+      "delayMs": 1200,
+      "retry": 3,
+      "enabled": false
+    }
+  ],
+  "json": [
+    {
+      "name": "Adzuna",
+      "type": "jobs",
+      "url": "https://api.adzuna.com/v1/api/jobs/us/search/1?app_id=${ADZUNA_APP_ID}&app_key=${ADZUNA_APP_KEY}&results_per_page=50&what=software&content-type=application/json",
+      "method": "GET",
+      "headers": {},
+      "path": "results",
+      "fields": {
+        "title": "title",
+        "company": "company.display_name",
+        "location": "location.display_name",
+        "url": "redirect_url",
+        "published_at": "created",
+        "salary_text": "salary_min"
+      },
+      "delayMs": 1000,
+      "retry": 3,
+      "enabled": true
+    },
+    {
+      "name": "Adzuna-Data",
+      "type": "jobs",
+      "url": "https://api.adzuna.com/v1/api/jobs/us/search/1?app_id=${ADZUNA_APP_ID}&app_key=${ADZUNA_APP_KEY}&results_per_page=50&what=data%20analyst&content-type=application/json",
+      "method": "GET",
+      "headers": {},
+      "path": "results",
+      "fields": {
+        "title": "title",
+        "company": "company.display_name",
+        "location": "location.display_name",
+        "url": "redirect_url",
+        "published_at": "created",
+        "salary_text": "salary_min"
+      },
+      "delayMs": 1000,
+      "retry": 3,
+      "enabled": true
+    },
+    {
+      "name": "Adzuna-Product",
+      "type": "jobs",
+      "url": "https://api.adzuna.com/v1/api/jobs/us/search/1?app_id=${ADZUNA_APP_ID}&app_key=${ADZUNA_APP_KEY}&results_per_page=50&what=product%20manager&content-type=application/json",
+      "method": "GET",
+      "headers": {},
+      "path": "results",
+      "fields": {
+        "title": "title",
+        "company": "company.display_name",
+        "location": "location.display_name",
+        "url": "redirect_url",
+        "published_at": "created",
+        "salary_text": "salary_min"
+      },
+      "delayMs": 1000,
+      "retry": 3,
+      "enabled": true
+    },
+    {
+      "name": "Adzuna-Design",
+      "type": "jobs",
+      "url": "https://api.adzuna.com/v1/api/jobs/us/search/1?app_id=${ADZUNA_APP_ID}&app_key=${ADZUNA_APP_KEY}&results_per_page=50&what=ui%20designer&content-type=application/json",
+      "method": "GET",
+      "headers": {},
+      "path": "results",
+      "fields": {
+        "title": "title",
+        "company": "company.display_name",
+        "location": "location.display_name",
+        "url": "redirect_url",
+        "published_at": "created",
+        "salary_text": "salary_min"
+      },
+      "delayMs": 1000,
+      "retry": 3,
+      "enabled": true
+    },
+    {
+      "name": "Adzuna-Security",
+      "type": "jobs",
+      "url": "https://api.adzuna.com/v1/api/jobs/us/search/1?app_id=${ADZUNA_APP_ID}&app_key=${ADZUNA_APP_KEY}&results_per_page=50&what=security%20engineer&content-type=application/json",
+      "method": "GET",
+      "headers": {},
+      "path": "results",
+      "fields": {
+        "title": "title",
+        "company": "company.display_name",
+        "location": "location.display_name",
+        "url": "redirect_url",
+        "published_at": "created",
+        "salary_text": "salary_min"
+      },
+      "delayMs": 1000,
+      "retry": 3,
+      "enabled": true
+    },
+    {
+      "name": "Adzuna-Sales",
+      "type": "jobs",
+      "url": "https://api.adzuna.com/v1/api/jobs/us/search/1?app_id=${ADZUNA_APP_ID}&app_key=${ADZUNA_APP_KEY}&results_per_page=50&what=sales%20manager&content-type=application/json",
+      "method": "GET",
+      "headers": {},
+      "path": "results",
+      "fields": {
+        "title": "title",
+        "company": "company.display_name",
+        "location": "location.display_name",
+        "url": "redirect_url",
+        "published_at": "created",
+        "salary_text": "salary_min"
+      },
+      "delayMs": 1000,
+      "retry": 3,
+      "enabled": true
+    },
+    {
+      "name": "Adzuna-DevOps",
+      "type": "jobs",
+      "url": "https://api.adzuna.com/v1/api/jobs/us/search/1?app_id=${ADZUNA_APP_ID}&app_key=${ADZUNA_APP_KEY}&results_per_page=50&what=devops%20engineer&content-type=application/json",
+      "method": "GET",
+      "headers": {},
+      "path": "results",
+      "fields": {
+        "title": "title",
+        "company": "company.display_name",
+        "location": "location.display_name",
+        "url": "redirect_url",
+        "published_at": "created",
+        "salary_text": "salary_min"
+      },
+      "delayMs": 1000,
+      "retry": 3,
+      "enabled": true
+    },
+    {
+      "name": "Adzuna-ML",
+      "type": "jobs",
+      "url": "https://api.adzuna.com/v1/api/jobs/us/search/1?app_id=${ADZUNA_APP_ID}&app_key=${ADZUNA_APP_KEY}&results_per_page=50&what=machine%20learning%20engineer&content-type=application/json",
+      "method": "GET",
+      "headers": {},
+      "path": "results",
+      "fields": {
+        "title": "title",
+        "company": "company.display_name",
+        "location": "location.display_name",
+        "url": "redirect_url",
+        "published_at": "created",
+        "salary_text": "salary_min"
+      },
+      "delayMs": 1000,
+      "retry": 3,
+      "enabled": true
+    },
+    {
+      "name": "Adzuna-Cloud",
+      "type": "jobs",
+      "url": "https://api.adzuna.com/v1/api/jobs/us/search/1?app_id=${ADZUNA_APP_ID}&app_key=${ADZUNA_APP_KEY}&results_per_page=50&what=cloud%20engineer&content-type=application/json",
+      "method": "GET",
+      "headers": {},
+      "path": "results",
+      "fields": {
+        "title": "title",
+        "company": "company.display_name",
+        "location": "location.display_name",
+        "url": "redirect_url",
+        "published_at": "created",
+        "salary_text": "salary_min"
+      },
+      "delayMs": 1000,
+      "retry": 3,
+      "enabled": true
+    },
+    {
+      "name": "Adzuna-QA",
+      "type": "jobs",
+      "url": "https://api.adzuna.com/v1/api/jobs/us/search/1?app_id=${ADZUNA_APP_ID}&app_key=${ADZUNA_APP_KEY}&results_per_page=50&what=qa%20engineer&content-type=application/json",
+      "method": "GET",
+      "headers": {},
+      "path": "results",
+      "fields": {
+        "title": "title",
+        "company": "company.display_name",
+        "location": "location.display_name",
+        "url": "redirect_url",
+        "published_at": "created",
+        "salary_text": "salary_min"
+      },
+      "delayMs": 1000,
+      "retry": 3,
+      "enabled": true
+    },
+    {
+      "name": "Adzuna-Marketing",
+      "type": "jobs",
+      "url": "https://api.adzuna.com/v1/api/jobs/us/search/1?app_id=${ADZUNA_APP_ID}&app_key=${ADZUNA_APP_KEY}&results_per_page=50&what=marketing%20manager&content-type=application/json",
+      "method": "GET",
+      "headers": {},
+      "path": "results",
+      "fields": {
+        "title": "title",
+        "company": "company.display_name",
+        "location": "location.display_name",
+        "url": "redirect_url",
+        "published_at": "created",
+        "salary_text": "salary_min"
+      },
+      "delayMs": 1000,
+      "retry": 3,
+      "enabled": true
+    },
+    {
+      "name": "Jooble",
+      "type": "jobs",
+      "url": "https://jooble.org/api/${JOOBLE_API_KEY}",
+      "method": "POST",
+      "headers": { "Content-Type": "application/json" },
+      "body": { "keywords": "software", "location": "remote" },
+      "path": "jobs",
+      "fields": {
+        "title": "title",
+        "company": "company",
+        "location": "location",
+        "url": "link",
+        "published_at": "updated",
+        "salary_text": "salary"
+      },
+      "delayMs": 1200,
+      "retry": 3,
+      "enabled": true
+    },
+    {
+      "name": "Jooble-Data",
+      "type": "jobs",
+      "url": "https://jooble.org/api/${JOOBLE_API_KEY}",
+      "method": "POST",
+      "headers": { "Content-Type": "application/json" },
+      "body": { "keywords": "data analyst", "location": "remote" },
+      "path": "jobs",
+      "fields": {
+        "title": "title",
+        "company": "company",
+        "location": "location",
+        "url": "link",
+        "published_at": "updated",
+        "salary_text": "salary"
+      },
+      "delayMs": 1200,
+      "retry": 3,
+      "enabled": true
+    },
+    {
+      "name": "Jooble-Product",
+      "type": "jobs",
+      "url": "https://jooble.org/api/${JOOBLE_API_KEY}",
+      "method": "POST",
+      "headers": { "Content-Type": "application/json" },
+      "body": { "keywords": "product manager", "location": "remote" },
+      "path": "jobs",
+      "fields": {
+        "title": "title",
+        "company": "company",
+        "location": "location",
+        "url": "link",
+        "published_at": "updated",
+        "salary_text": "salary"
+      },
+      "delayMs": 1200,
+      "retry": 3,
+      "enabled": true
+    },
+    {
+      "name": "Jooble-Design",
+      "type": "jobs",
+      "url": "https://jooble.org/api/${JOOBLE_API_KEY}",
+      "method": "POST",
+      "headers": { "Content-Type": "application/json" },
+      "body": { "keywords": "ui designer", "location": "remote" },
+      "path": "jobs",
+      "fields": {
+        "title": "title",
+        "company": "company",
+        "location": "location",
+        "url": "link",
+        "published_at": "updated",
+        "salary_text": "salary"
+      },
+      "delayMs": 1200,
+      "retry": 3,
+      "enabled": true
+    },
+    {
+      "name": "Jooble-Security",
+      "type": "jobs",
+      "url": "https://jooble.org/api/${JOOBLE_API_KEY}",
+      "method": "POST",
+      "headers": { "Content-Type": "application/json" },
+      "body": { "keywords": "security engineer", "location": "remote" },
+      "path": "jobs",
+      "fields": {
+        "title": "title",
+        "company": "company",
+        "location": "location",
+        "url": "link",
+        "published_at": "updated",
+        "salary_text": "salary"
+      },
+      "delayMs": 1200,
+      "retry": 3,
+      "enabled": true
+    },
+    {
+      "name": "Jooble-Sales",
+      "type": "jobs",
+      "url": "https://jooble.org/api/${JOOBLE_API_KEY}",
+      "method": "POST",
+      "headers": { "Content-Type": "application/json" },
+      "body": { "keywords": "sales manager", "location": "remote" },
+      "path": "jobs",
+      "fields": {
+        "title": "title",
+        "company": "company",
+        "location": "location",
+        "url": "link",
+        "published_at": "updated",
+        "salary_text": "salary"
+      },
+      "delayMs": 1200,
+      "retry": 3,
+      "enabled": true
+    },
+    {
+      "name": "Jooble-DevOps",
+      "type": "jobs",
+      "url": "https://jooble.org/api/${JOOBLE_API_KEY}",
+      "method": "POST",
+      "headers": { "Content-Type": "application/json" },
+      "body": { "keywords": "devops engineer", "location": "remote" },
+      "path": "jobs",
+      "fields": {
+        "title": "title",
+        "company": "company",
+        "location": "location",
+        "url": "link",
+        "published_at": "updated",
+        "salary_text": "salary"
+      },
+      "delayMs": 1200,
+      "retry": 3,
+      "enabled": true
+    },
+    {
+      "name": "Jooble-ML",
+      "type": "jobs",
+      "url": "https://jooble.org/api/${JOOBLE_API_KEY}",
+      "method": "POST",
+      "headers": { "Content-Type": "application/json" },
+      "body": { "keywords": "machine learning engineer", "location": "remote" },
+      "path": "jobs",
+      "fields": {
+        "title": "title",
+        "company": "company",
+        "location": "location",
+        "url": "link",
+        "published_at": "updated",
+        "salary_text": "salary"
+      },
+      "delayMs": 1200,
+      "retry": 3,
+      "enabled": true
+    },
+    {
+      "name": "Jooble-Cloud",
+      "type": "jobs",
+      "url": "https://jooble.org/api/${JOOBLE_API_KEY}",
+      "method": "POST",
+      "headers": { "Content-Type": "application/json" },
+      "body": { "keywords": "cloud engineer", "location": "remote" },
+      "path": "jobs",
+      "fields": {
+        "title": "title",
+        "company": "company",
+        "location": "location",
+        "url": "link",
+        "published_at": "updated",
+        "salary_text": "salary"
+      },
+      "delayMs": 1200,
+      "retry": 3,
+      "enabled": true
+    },
+    {
+      "name": "Jooble-QA",
+      "type": "jobs",
+      "url": "https://jooble.org/api/${JOOBLE_API_KEY}",
+      "method": "POST",
+      "headers": { "Content-Type": "application/json" },
+      "body": { "keywords": "qa engineer", "location": "remote" },
+      "path": "jobs",
+      "fields": {
+        "title": "title",
+        "company": "company",
+        "location": "location",
+        "url": "link",
+        "published_at": "updated",
+        "salary_text": "salary"
+      },
+      "delayMs": 1200,
+      "retry": 3,
+      "enabled": true
+    },
+    {
+      "name": "Jooble-Marketing",
+      "type": "jobs",
+      "url": "https://jooble.org/api/${JOOBLE_API_KEY}",
+      "method": "POST",
+      "headers": { "Content-Type": "application/json" },
+      "body": { "keywords": "marketing manager", "location": "remote" },
+      "path": "jobs",
+      "fields": {
+        "title": "title",
+        "company": "company",
+        "location": "location",
+        "url": "link",
+        "published_at": "updated",
+        "salary_text": "salary"
+      },
+      "delayMs": 1200,
+      "retry": 3,
+      "enabled": true
+    },
+    {
+      "name": "CompanyAPI",
+      "type": "company",
+      "url": "https://example.com/company_daily.json",
+      "method": "GET",
+      "headers": {},
+      "path": "items",
+      "fields": {
+        "company": "company",
+        "date": "date",
+        "hiring_index": "hiring_index",
+        "tech_ratio": "tech_ratio",
+        "ai_job_ratio": "ai_job_ratio"
+      },
+      "delayMs": 1000,
+      "retry": 3,
+      "enabled": false
+    },
+    {
+      "name": "IndustryAPI",
+      "type": "industry",
+      "url": "https://example.com/industry_daily.json",
+      "method": "GET",
+      "headers": {},
+      "path": "items",
+      "fields": {
+        "industry": "industry",
+        "date": "date",
+        "industry_index": "industry_index"
+      },
+      "delayMs": 1000,
+      "retry": 3,
+      "enabled": false
+    }
+  ],
+  "html": [
+    {
+      "name": "BOSS直聘",
+      "type": "jobs",
+      "url": "https://www.zhipin.com/web/geek/job",
+      "method": "GET",
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+        "Accept-Language": "zh-CN,zh;q=0.9",
+        "Referer": "https://www.zhipin.com/",
+        "Cookie": "${BOSS_COOKIE}"
+      },
+      "baseUrl": "https://www.zhipin.com",
+      "listSelector": [
+        ".job-list-box .job-card-wrapper",
+        ".job-card-wrapper",
+        ".job-list-box > li",
+        ".job-list-wrapper .job-card"
+      ],
+      "fields": {
+        "title": [".job-name", ".job-title"],
+        "company": [".company-name", ".company-info .company-name"],
+        "location": [".job-area", ".job-area-wrapper .job-area"],
+        "url": ["a::attr(href)", ".job-card-wrapper::attr(href)"],
+        "published_at": "",
+        "salary_text": [".salary", ".salary-text"]
+      },
+      "delayMs": 3000,
+      "retry": 3,
+      "enabled": true
+    },
+    {
+      "name": "拉勾",
+      "type": "jobs",
+      "url": "https://www.lagou.com/wn/jobs",
+      "method": "GET",
+      "headers": {
+        "User-Agent": "Mozilla/5.0",
+        "Cookie": "${LAGOU_COOKIE}"
+      },
+      "listSelector": ".item__10RTO",
+      "fields": {
+        "title": ".p-top .p-name",
+        "company": ".company-name",
+        "location": ".p-bom .p-salary",
+        "url": "a::attr(href)",
+        "published_at": "",
+        "salary_text": ".p-bom .p-salary"
+      },
+      "delayMs": 2000,
+      "retry": 3,
+      "enabled": true
+    },
+    {
+      "name": "智联",
+      "type": "jobs",
+      "url": "https://sou.zhaopin.com/",
+      "method": "GET",
+      "headers": {
+        "User-Agent": "Mozilla/5.0",
+        "Cookie": "${ZHAOPIN_COOKIE}"
+      },
+      "listSelector": ".joblist-box__item",
+      "fields": {
+        "title": ".job-name",
+        "company": ".company-name",
+        "location": ".job-area",
+        "url": "a::attr(href)",
+        "published_at": "",
+        "salary_text": ".salary"
+      },
+      "delayMs": 2000,
+      "retry": 3,
+      "enabled": true
+    },
+    {
+      "name": "腾讯招聘",
+      "type": "jobs",
+      "url": "https://careers.tencent.com/search.html?query=at_1",
+      "method": "GET",
+      "headers": {
+        "User-Agent": "Mozilla/5.0",
+        "Accept-Language": "zh-CN,zh;q=0.9",
+        "Referer": "https://careers.tencent.com/home.html"
+      },
+      "baseUrl": "https://careers.tencent.com",
+      "listSelector": [
+        ".recruit-list .recruit-list-item",
+        ".recruit-list-item",
+        ".search-list .recruit-list-item"
+      ],
+      "fields": {
+        "title": [".name", ".title", ".recruit-title"],
+        "company": [".company", ".com-name"],
+        "location": [".location", ".city"],
+        "url": ["a::attr(href)"],
+        "published_at": [".time", ".date"],
+        "salary_text": [".salary"]
+      },
+      "delayMs": 2500,
+      "retry": 3,
+      "enabled": true
+    },
+    {
+      "name": "阿里巴巴招聘",
+      "type": "jobs",
+      "url": "https://talent.alibaba.com/",
+      "method": "GET",
+      "headers": {
+        "User-Agent": "Mozilla/5.0",
+        "Accept-Language": "zh-CN,zh;q=0.9",
+        "Referer": "https://home.alibabagroup.com/zh-HK/careers"
+      },
+      "baseUrl": "https://talent.alibaba.com",
+      "listSelector": [
+        ".job-list .job-item",
+        ".position-list .position-item",
+        ".recruit-list .item"
+      ],
+      "fields": {
+        "title": [".job-name", ".position-name", ".title"],
+        "company": [".company-name", ".company"],
+        "location": [".job-location", ".location"],
+        "url": ["a::attr(href)"],
+        "published_at": [".date", ".time"],
+        "salary_text": [".salary"]
+      },
+      "delayMs": 2500,
+      "retry": 3,
+      "enabled": true
+    },
+    {
+      "name": "阿里云招聘",
+      "type": "jobs",
+      "url": "https://careers.aliyun.com/",
+      "method": "GET",
+      "headers": {
+        "User-Agent": "Mozilla/5.0",
+        "Accept-Language": "zh-CN,zh;q=0.9",
+        "Referer": "https://careers.aliyun.com/"
+      },
+      "baseUrl": "https://careers.aliyun.com",
+      "listSelector": [
+        ".job-list .job-item",
+        ".position-list .position-item",
+        ".recruit-list .item"
+      ],
+      "fields": {
+        "title": [".job-name", ".position-name", ".title"],
+        "company": [".company-name", ".company"],
+        "location": [".job-location", ".location"],
+        "url": ["a::attr(href)"],
+        "published_at": [".date", ".time"],
+        "salary_text": [".salary"]
+      },
+      "delayMs": 2500,
+      "retry": 3,
+      "enabled": true
+    },
+    {
+      "name": "字节跳动招聘",
+      "type": "jobs",
+      "url": "https://jobs.bytedance.com/",
+      "method": "GET",
+      "headers": {
+        "User-Agent": "Mozilla/5.0",
+        "Accept-Language": "zh-CN,zh;q=0.9",
+        "Referer": "https://jobs.bytedance.com/"
+      },
+      "baseUrl": "https://jobs.bytedance.com",
+      "listSelector": [
+        ".job-list .job-item",
+        ".job-list-item",
+        ".position-list .position-item"
+      ],
+      "fields": {
+        "title": [".job-title", ".title"],
+        "company": [".company", ".company-name"],
+        "location": [".job-city", ".location"],
+        "url": ["a::attr(href)"],
+        "published_at": [".date", ".time"],
+        "salary_text": [".salary"]
+      },
+      "delayMs": 2500,
+      "retry": 3,
+      "enabled": true
+    },
+    {
+      "name": "国家电网招聘",
+      "type": "jobs",
+      "url": "https://zhaopin.sgcc.com.cn",
+      "method": "GET",
+      "headers": {
+        "User-Agent": "Mozilla/5.0",
+        "Accept-Language": "zh-CN,zh;q=0.9",
+        "Referer": "https://zhaopin.sgcc.com.cn"
+      },
+      "baseUrl": "https://zhaopin.sgcc.com.cn",
+      "listSelector": [
+        ".job-list .job-item",
+        ".recruit-list .item",
+        ".list .item"
+      ],
+      "fields": {
+        "title": [".job-name", ".title"],
+        "company": [".company-name", ".company"],
+        "location": [".job-location", ".location"],
+        "url": ["a::attr(href)"],
+        "published_at": [".date", ".time"],
+        "salary_text": [".salary"]
+      },
+      "delayMs": 2500,
+      "retry": 3,
+      "enabled": true
+    }
+  ],
+  "company_html": [
+    {
+      "name": "腾讯",
+      "url": "https://careers.tencent.com/home.html",
+      "method": "GET",
+      "headers": {
+        "User-Agent": "Mozilla/5.0",
+        "Accept-Language": "zh-CN,zh;q=0.9",
+        "Referer": "https://careers.tencent.com/"
+      },
+      "baseUrl": "https://careers.tencent.com",
+      "countRegex": "totalCount\"\\s*:\\s*(\\d+)",
+      "delayMs": 2000,
+      "retry": 3,
+      "enabled": true
+    },
+    {
+      "name": "阿里巴巴",
+      "url": "https://talent.alibaba.com/",
+      "method": "GET",
+      "headers": {
+        "User-Agent": "Mozilla/5.0",
+        "Accept-Language": "zh-CN,zh;q=0.9",
+        "Referer": "https://home.alibabagroup.com/zh-HK/careers"
+      },
+      "baseUrl": "https://talent.alibaba.com",
+      "countRegex": "totalCount\"\\s*:\\s*(\\d+)",
+      "delayMs": 2000,
+      "retry": 3,
+      "enabled": true
+    },
+    {
+      "name": "阿里云",
+      "url": "https://careers.aliyun.com/",
+      "method": "GET",
+      "headers": {
+        "User-Agent": "Mozilla/5.0",
+        "Accept-Language": "zh-CN,zh;q=0.9",
+        "Referer": "https://careers.aliyun.com/"
+      },
+      "baseUrl": "https://careers.aliyun.com",
+      "countRegex": "totalCount\"\\s*:\\s*(\\d+)",
+      "delayMs": 2000,
+      "retry": 3,
+      "enabled": true
+    },
+    {
+      "name": "字节跳动",
+      "url": "https://jobs.bytedance.com/",
+      "method": "GET",
+      "headers": {
+        "User-Agent": "Mozilla/5.0",
+        "Accept-Language": "zh-CN,zh;q=0.9",
+        "Referer": "https://jobs.bytedance.com/"
+      },
+      "baseUrl": "https://jobs.bytedance.com",
+      "countRegex": "totalCount\"\\s*:\\s*(\\d+)",
+      "delayMs": 2000,
+      "retry": 3,
+      "enabled": true
+    },
+    {
+      "name": "国家电网",
+      "url": "https://zhaopin.sgcc.com.cn",
+      "method": "GET",
+      "headers": {
+        "User-Agent": "Mozilla/5.0",
+        "Accept-Language": "zh-CN,zh;q=0.9",
+        "Referer": "https://zhaopin.sgcc.com.cn"
+      },
+      "baseUrl": "https://zhaopin.sgcc.com.cn",
+      "countRegex": "totalCount\"\\s*:\\s*(\\d+)",
+      "delayMs": 2500,
+      "retry": 3,
+      "enabled": true
+    }
+  ]
+}
